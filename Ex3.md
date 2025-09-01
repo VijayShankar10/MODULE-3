@@ -1,6 +1,5 @@
 # Ex.No:3  
-# Ex.Name: Write a C++ program to get two numbers from two base classes and display the income after the payment of tax in the derived class.  
-(Illustrate Multiple Inheritance and use appropriate access specifier)  
+# Ex.Name: Write a C++ program to do integer arithmetic operation using muliple inheritance( + and - operation in one class,* and / in another class).
 
 ## Date:  
 
@@ -24,21 +23,76 @@ To write a C++ program using multiple inheritance, where one base class provides
 ```cpp
 #include <iostream>
 using namespace std;
-class getData
-{
-    public:
-    void
+
+class ArithmeticAddSub {
+protected:
+    int a, b;
+public:
+    void setValues(int x, int y) {
+        a = x;
+        b = y;
+    }
+
+    void addition() {
+        cout << "The Result of the Addition is:" << (a + b) << endl;
+    }
+
+    void subtraction() {
+        cout << "The Result of the Subtraction is:" << (a - b) << endl;
+    }
+};
+
+class ArithmeticMulDiv : public ArithmeticAddSub {
+public:
+    void multiplication() {
+        cout << "The Result of the Multiplication is:" << (a * b) << endl;
+    }
+
+    void division() {
+        if (b != 0) {
+            cout << "The Result of the Division is:" << (a / b) << endl;
+        } else {
+            cout << "Division by zero is not allowed." << endl;
+        }
+    }
+
+    void modulo() {
+        if (b != 0) {
+            cout << "The Result of the Modulo is:" << (a % b) << endl;
+        } else {
+            cout << "Modulo by zero is not allowed." << endl;
+        }
+    }
+};
+
+int main() {
+    int x, y;
+    cin >> x >> y;
+
+    ArithmeticMulDiv obj;
+    obj.setValues(x, y);
+    obj.addition();
+    obj.subtraction();
+    obj.multiplication();
+    obj.division();
+    obj.modulo();
+
+    return 0;
 }
+
 ```
+
 ## Output:
+<img width="681" height="679" alt="image" src="https://github.com/user-attachments/assets/9fa460e5-a992-4e29-8f22-99ef24cd8fa5" />
+
+## Result:
 ```
-Input:
-275000
-12500
+Input: 45 50
 
 Output:
-Income after the payment of Tax : 262500
+The Result of the Addition is:95
+The Result of the Subtraction is:-5
+The Result of the Multiplication is:2250
+The Result of the Division is:0
+The Result of the Modulo is:45
 ```
-##Result:
-<img width="853" height="342" alt="image" src="https://github.com/user-attachments/assets/b8c31cac-a58b-4195-9f7f-d6ef44e6cf3c" />
-
