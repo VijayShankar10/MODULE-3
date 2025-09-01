@@ -67,6 +67,9 @@ int main() {
 ```
 
 ## Output:
+<img width="839" height="540" alt="image" src="https://github.com/user-attachments/assets/210c6d8a-00a6-4475-bad7-edc111121eab" />
+
+## Result:
 ```
 Input:  
 1 ila 500 300
@@ -78,6 +81,3 @@ unit consumption:200
 amount:500
 
 ```
-##Result:
-<img width="839" height="540" alt="image" src="https://github.com/user-attachments/assets/210c6d8a-00a6-4475-bad7-edc111121eab" />
-
