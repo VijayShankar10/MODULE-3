@@ -49,7 +49,11 @@ int main()
     return 0;
 }
 ```
+
 ## Output:
+<img width="853" height="366" alt="image" src="https://github.com/user-attachments/assets/ffd6240d-7dc8-4bdd-82aa-ee8a3d0113bb" />
+
+## Result:
 ```
 Input:
 10
@@ -57,6 +61,3 @@ Input:
 Output:
 Circumference of a circle is : 62.8
 ```
-##Result:
-<img width="853" height="366" alt="image" src="https://github.com/user-attachments/assets/ffd6240d-7dc8-4bdd-82aa-ee8a3d0113bb" />
-
